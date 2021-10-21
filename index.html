@@ -16,9 +16,9 @@
 <body>
 
     <div class="container-fluid">
-        <div class="row m-5 justify-content-center">
+        <div class="row m-md-5 justify-content-center">
 
-            <div class="col-5 text-center bg-danger text-white">
+            <div class="col-12 col-md-5 text-center bg-danger text-white">
                 <h1>CALENDARIO</h1>
 
             </div>
@@ -53,18 +53,18 @@
 
             <div class="col-2 text-right">
 
-                <button class="btn"><i class="fa fa-arrow-left" aria-hidden="true"></i> </button>
+                <button id="atrasMes" class="btn"><i class="fa fa-arrow-left" aria-hidden="true"></i> </button>
             </div>
 
             <div class="col-4 text-center">
 
-                <h2>ENERO</h2>
+                <h2 id="mes">ENERO</h2>
 
 
             </div>
             <div class="col-2">
 
-                <button class="btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></i>
+                <button id="adelanteMes" class="btn"><i class="fa fa-arrow-right" aria-hidden="true"></i></button></i>
 
 
             </div>
@@ -79,11 +79,11 @@
 
     </div>
 
-    <div class="row">
+    <div class="row m-mb-4">
 
-        <div class=" col-12">
+        <div class=" col-md-12">
 
-            <table class="table text-center badge-dange bg-white">
+            <table class="table table-responsive-md text-center badge-dange bg-white">
                 <thead>
                     <th class="scope">Lunes</th>
                     <th class="scope">Martes</th>
@@ -94,8 +94,8 @@
                     <th class="scope">Domingo</th>
 
 
-                </thead>
-                <tbod>
+                </thead id="tBody">
+                <tbody>
                     <tr>
                         <td>1</td>
                         <td>2</td>
@@ -146,7 +146,7 @@
 
 
 
-                </tbod>
+                </tbody>
 
 
 
@@ -194,7 +194,7 @@
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
 
-    <script src="./assets/js/index.js"></script>
+    <script src="./assets/index.js"></script>
 
 </body>
 
