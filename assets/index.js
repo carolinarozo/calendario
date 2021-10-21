@@ -41,3 +41,20 @@ document.getElementById("atrasMes").addEventListener("click", function () {
     }
 
 })
+
+function cargarPagina() {
+
+    var meses = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE", "DICIEMBRE"]
+
+
+    const fecha = new Date().toISOString();
+    var lista = fecha.split("-");
+    console.log(lista);
+    var nmes = parseInt(lista[1]);
+    var mes = meses[nmes - 1];
+    document.getElementById("mes").innerHTML = mes;
+
+
+
+
+}
