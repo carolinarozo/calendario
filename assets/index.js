@@ -11,8 +11,7 @@ document.getElementById("adelanteMes").addEventListener("click", function () {
 
         document.getElementById("mes").innerHTML = mesSiguiente
 
-        console.log(mesActual);
-        console.log(indexMesActual)
+
     } else {
 
         document.getElementById("mes").innerHTML = mes[0];
@@ -33,8 +32,7 @@ document.getElementById("atrasMes").addEventListener("click", function () {
 
         document.getElementById("mes").innerHTML = mesSiguiente
 
-        console.log(mesActual);
-        console.log(indexMesActual)
+
     } else {
 
         document.getElementById("mes").innerHTML = mes[11];
@@ -49,10 +47,14 @@ function cargarPagina() {
 
     const fecha = new Date().toISOString();
     var lista = fecha.split("-");
-    console.log(lista);
+
     var nmes = parseInt(lista[1]);
     var mes = meses[nmes - 1];
     document.getElementById("mes").innerHTML = mes;
+
+    var anoActual = lista[0];
+    console.log(anoActual)
+    document.getElementById("ano").innerHTML = anoActual
 
 
 
